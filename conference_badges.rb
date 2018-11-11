@@ -1,7 +1,7 @@
 # Write your code here.
 
-#FastTrack Test! 
-#quick NOTES TO MYSELF to organize my thoughts sorry!
+#FastTrack Test! 11/11
+#quick NOTES TO SELF to organize my thoughts sorry teachers!
 
 #step 1: need BADGE_MAKER to say "Hello, my name is _."
 #step 2: need BATCH_BADGE_CREATOR for conference speakers array [Edsger, Ada, Charles, Alan, Grace, Linus, and Matz.] as argument & RETURN array badge messages
@@ -12,9 +12,10 @@
 #BADGE_MAKER
 
 conferencespeakers = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
+speakername = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
 
 def badge_maker(speakername)
-  return "Hello, my name is #{speakername}."
+  puts "Hello, my name is #{speakername}."
 end
 
 #BATCH_BADGE_CREATOR
@@ -25,12 +26,12 @@ def batch_badge_creator(conferencespeakers)
   end 
 end
 
-#ASSIGN_ROOMS (1-7)
+#ASSIGN_ROOMS (1-7) (how to make it end at 7???)
 
 def assign_room(conferencespeakers)
   counter = 0 
   conferencespeakers.each_with_index(1) do {|speakername, index|}
-    counter = +1 
+    counter = +1 > 7 
     puts "Hello #{speakername}! You'll be assigned to room #{index}!"
   end
 end
@@ -38,12 +39,12 @@ end
 #PRINTER 
 
 def printer (speakername)
-  batch_badge_creator(speakername).each do |output|
-    puts output 
+  batch_badge_creator(speakername).each do |badge|
+    puts badge 
   end
   
-  assign_room(conferencespeakers).each do |output|
-    puts output
+  assign_room(conferencespeakers).each do |conferenceroom|
+    puts conferenceroom
   end
 end
 end
