@@ -31,7 +31,7 @@ end
 def assign_room(conferencespeakers)
   counter = 0 
   conferencespeakers.each do |speakername|
-    counter = +1 < 7 
+    counter = +1 
     puts "Hello #{speakername}! You'll be assigned to room #{conferenceroom}!"
   end
 end
