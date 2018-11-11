@@ -9,7 +9,7 @@
 #step 4: need to output (print?) "Hello, [speakername], you'll be assigned to [conferenceroom!"
 #step 5: need PRINTER to output results of BATCH BADGE CREATOR and then ASSIGN ROOMS (which is array of room assignmets = [ ]? how to print out each assignment / iterate over your array of room assingments in order to "puts" assignment)
 
-#BADGE_MAKER *individuals
+#BADGE_MAKER *individuals!!!
 
 speakername = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 conferenceroom = [1-7]
