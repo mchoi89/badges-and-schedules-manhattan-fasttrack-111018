@@ -9,38 +9,41 @@
 #step 4: need to output (print?) "Hello, [speaker], you'll be assigned to [room number]!"
 #step 5: need PRINTER to output results of BATCH BADGE CREATOR and then ASSIGN ROOMS (which is array of room assignmets = [ ]? how to print out each assignment / iterate over your array of room assingments in order to "puts" assignment)
 
-#BADGE_MAKER
+#BADGE_MAKER *individuals
 
 conferencespeakers = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
-speakername = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
+speakername = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+conferenceroom = [1-7]
 
 def badge_maker(speakername)
   puts "Hello, my name is #{speakername}."
 end
 
-#BATCH_BADGE_CREATOR
+#BATCH_BADGE_CREATOR *new array 
 
 def batch_badge_creator(conferencespeakers)
+  badges = [ ]
   conferencespeakers.each do |speakername|
-    return badge_maker(speakername)
+    return speakername
   end 
 end
 
-#ASSIGN_ROOMS (1-7) (how to make it end at 7???)
+#ASSIGN_ROOMS (1-7) *how to make it end at 7???
 
 def assign_room(conferencespeakers)
   counter = 0 
   conferencespeakers.each_with_index(1-7) do {|speakername, index|}
     counter = +1 
     puts "Hello #{speakername}! You'll be assigned to room #{index}!"
+    return conferenceroom
   end
 end
 
-#PRINTER 
+#PRINTER *both names and rooms here, pull from top 
 
-def printer (speakername)
-  batch_badge_creator(speakername).each do |badge|
-    puts badge
+def printer (conferencespeakers)
+  batch_badge_creator(conferencespeakers).each do |speakername|
+    puts speakername
   assign_room(conferencespeakers).each do |conferenceroom|
     puts conferenceroom
   end
