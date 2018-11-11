@@ -37,8 +37,8 @@ end
 
 #PRINTER 
 
-def printer (conferencespeakers)
-  batch_badge_creator(conferencespeakers).each do |output|
+def printer (speakername)
+  batch_badge_creator(speakername).each do |output|
     puts output 
   end
   
