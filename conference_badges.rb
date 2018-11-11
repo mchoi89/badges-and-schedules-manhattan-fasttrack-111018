@@ -40,10 +40,8 @@ end
 
 def printer (speakername)
   batch_badge_creator(speakername).each do |badge|
-    puts badge 
-  end
-  
-def assign_room(conferencespeakers).each do |conferenceroom|
+    puts badge
+  assign_room(conferencespeakers).each do |conferenceroom|
     puts conferenceroom
   end
 end
