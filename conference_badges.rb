@@ -18,12 +18,17 @@ end
 #BATCH_BADGE_CREATOR
 
 def batch_badge_creator(conferencespeakers)
-  badges = [ ]
   conferencespeakers.each do |speakername|
-    #???
+    badge_maker(speakername)
   end
   return badges 
 end
 
 #ASSIGN_ROOMS (1-7)
+
+def assign_room(conferencespeakers)
+  counter = 0 
+  conferencespeakers.each do |speakername|
+    counter =+1 < 7 
+    puts 
 
