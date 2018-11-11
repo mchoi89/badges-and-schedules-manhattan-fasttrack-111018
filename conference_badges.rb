@@ -1,7 +1,7 @@
 # Write your code here.
 
 #FastTrack Test! 11/11
-#quick NOTES TO SELF to organize my thoughts sorry teachers!
+#quick NOTES TO SELF to organize my thoughts - sorry teachers!
 
 #step 1: need BADGE_MAKER to say "Hello, my name is _."
 #step 2: need BATCH_BADGE_CREATOR for conference speakers array [Edsger, Ada, Charles, Alan, Grace, Linus, and Matz.] as argument & RETURN array badge messages
@@ -9,7 +9,7 @@
 #step 4: need to output (print?) "Hello, [speakername], you'll be assigned to [conferenceroom!"
 #step 5: need PRINTER to output results of BATCH BADGE CREATOR and then ASSIGN ROOMS (which is array of room assignmets = [ ]? how to print out each assignment / iterate over your array of room assingments in order to "puts" assignment)
 
-#BADGE_MAKER *individuals!!!
+#BADGE_MAKER *individuals!
 
 speakername = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 conferenceroom = [1-7]
@@ -29,7 +29,7 @@ def batch_badge_creator(conferencespeakers)
   end 
 end
 
-#ASSIGN_ROOMS (1-7) *tried each_with_index, but how do i make it end at 7???
+#ASSIGN_ROOMS (1-7) *tried each_with_index, but how do i make it end at 7?
 
 def assign_room(conferencespeakers)
   counter = 0
