@@ -41,5 +41,10 @@ def printer (conferencespeakers)
     puts output 
   end
   
+  assign_room(conferencespeakers).each do |output|
+    puts output
+  end
+end
+end
 
 
