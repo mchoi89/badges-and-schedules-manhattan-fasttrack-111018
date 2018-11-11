@@ -11,7 +11,7 @@
 
 #BADGE_MAKER
 
-speakername = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
+conferencespeakers = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
 
 def badge_maker(speakername)
   return "Hello, my name is #{speakername}."
