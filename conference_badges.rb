@@ -17,4 +17,5 @@ end
 
 #BATCH_BADGE_CREATOR
 
-def batch_badge_creator()
+def batch_badge_creator(conferencespeakers)
+  
