@@ -42,7 +42,7 @@ end
 
 #PRINTER *both names and rooms here, pull from top arrays?
 
-def printer (conferencespeakers)
+def printer(conferencespeakers)
   batch_badge_creator(conferencespeakers).each do |speakername|
     puts speakername
   assign_room(conferencespeakers).each do |conferenceroom|
