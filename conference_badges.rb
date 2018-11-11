@@ -17,4 +17,4 @@ end
 
 #BATCH_BADGE_CREATOR
 
-def 
+def batch_badge_creator()
