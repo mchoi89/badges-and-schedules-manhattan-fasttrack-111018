@@ -30,8 +30,8 @@ end
 
 def assign_room(conferencespeakers)
   counter = 0 
-  conferencespeakers.each_with_index(1) do {|speakername, index|}
-    counter = +1 > 7 
+  conferencespeakers.each_with_index(1-7) do {|speakername, index|}
+    counter = +1 
     puts "Hello #{speakername}! You'll be assigned to room #{index}!"
   end
 end
@@ -43,7 +43,7 @@ def printer (speakername)
     puts badge 
   end
   
-  assign_room(conferencespeakers).each do |conferenceroom|
+def assign_room(conferencespeakers).each do |conferenceroom|
     puts conferenceroom
   end
 end
