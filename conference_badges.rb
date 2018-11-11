@@ -18,4 +18,4 @@ end
 #BATCH_BADGE_CREATOR
 
 def batch_badge_creator(conferencespeakers)
-  
+  badges
