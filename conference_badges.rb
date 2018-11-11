@@ -29,7 +29,7 @@ end
 
 def assign_room(conferencespeakers)
   counter = 0 
-  conferencespeakers.each do |speakername|
+  conferencespeakers.each_with_index do |speakername|
     counter = +1 
     puts "Hello #{speakername}! You'll be assigned to room #{conferenceroom}!"
   end
